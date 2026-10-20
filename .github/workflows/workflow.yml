@@ -1,0 +1,34 @@
+name: CNS 3205 GitHub Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Display project files
+        run: |
+          echo "CNS 3205 GitHub Workflow"
+          echo "Checking repository contents..."
+          ls -la
+
+      - name: Test HTML file
+        run: |
+          test -f index.html
+          echo "index.html exists successfully."
+
+      - name: Test README
+        run: |
+          test -f README.md
+          echo "README.md exists successfully."
+
+      - name: Workflow completed
+        run: |
+          echo "CNS 3205 workflow completed successfully."
