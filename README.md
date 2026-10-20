@@ -17,7 +17,9 @@ This project demonstrates the integration of a Linux virtual cloud server with G
 The purpose of this project is to demonstrate how source code can be managed on a Linux server using Git and synchronized with a GitHub repository.
 
 ## Workflow
+## Latest Update
 
+This project was updated through the GitHub web interface.
 The basic workflow is:
 
 1. Create or modify code.
